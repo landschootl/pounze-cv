@@ -1,0 +1,144 @@
+.flex {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	color: #2c3e50; 
+	display: block;
+}
+
+.flex h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.flex h3 {
+  font-size: 1.4em;
+}
+
+.flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;	
+	}
+
+.flex-colomn {
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	-moz-box-flex-direction: column;
+	}
+
+.navigation {
+	list-style: none;
+	font-size: 1.25em;
+	padding: 0px;
+	justify-content: flex-end;	
+	margin: auto;
+	}
+
+.navigation a {
+  	text-decoration: none;
+  	display: block;
+  	padding: 1em;
+  	color: #34495e
+	}
+
+.flex nav {
+	width: 100%;
+	margin: 0 auto;
+	
+	}
+
+.flex button:hover,
+.flex nav li a:hover {
+	background-color: #FFFE66;
+	color: #206361;
+
+	}
+	
+.navigation li a {  
+	width: 100px;
+	margin-right: 200px;
+	border-radius: 5px;
+	text-align: center;
+	}
+
+
+.flex #logo {
+	width: 100%;
+	margin: 1.5%;
+  	padding: 15px;
+	margin-left: 3%;
+	-webkit-align-self: center;
+	-moz-padding: 10px 0;
+	}
+
+#header{
+	position: relative;
+	width: 100%;
+	background: #f1c40f;
+	padding: 0px;
+	border-bottom: solid 10px #DFB400;
+	}
+
+@media screen and (max-width: 850px){
+	
+	.flex #logo {
+		margin: 0px;
+		padding: 0px;
+		}
+	
+	#header,
+	.flex nav {
+		position: relative;
+		margin: 0px;
+		padding: 0px;
+		}
+	
+	.flex #logo {
+		padding: 15px 0px;
+		}
+	
+	.navigation li {
+
+		width: 100%;
+		}
+  	.flex nav {
+		text-align: center;
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		}
+  	.navigation {
+		background:	#FFE03A;
+    		width: 100%;
+  
+  	}
+  
+  	.navigation li a {  
+		width: 100%;
+		margin: 0 auto;
+		padding: 15px 0px;
+		border-radius: 0;
+		text-align: center;
+		}
+}
+
+@media screen and (max-width: 500px){
+
+	.navigation {
+		text-align: center;
+		flex-direction: column;
+		-webkit-flex-direction: column;
+    	width: 100%;
+		margin: 0;
+		padding: 15px 0;
+		border-radius: 0;
+		text-align: center;
+	}
+	#header {
+		position: relative;
+		padding: 0px;
+	}
+
+}

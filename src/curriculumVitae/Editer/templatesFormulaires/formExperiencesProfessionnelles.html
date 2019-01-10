@@ -1,0 +1,17 @@
+<div class="form-group" data-ng-repeat="experienceProfessionnelle in cv.experiencesProfessionnelles">
+    <h4>Experience professionnelle n°{{$index}} : </h4>
+    <label for="dateDebut{{$index}}" class="control-label">Date debut </label>
+    <input type="text" class="form-control" id="dateDebut{{$index}}" ng-model="experienceProfessionnelle.dateDebut">
+    <label for="dateFin{{$index}}" class="control-label">Date fin </label>
+    <input type="text" class="form-control" id="dateFin{{$index}}" ng-model="experienceProfessionnelle.dateFin">
+    <label for="fonction{{$index}}" class="control-label">Fonction </label>
+    <input type="text" class="form-control" id="fonction{{$index}}" ng-model="experienceProfessionnelle.fonction">
+    <label for="entreprise{{$index}}" class="control-label">Entreprise </label>
+    <input type="text" class="form-control" id="entreprise{{$index}}" ng-model="experienceProfessionnelle.entreprise">
+    <label for="mission{{$index}}" class="control-label">Mission </label>
+    <input type="text" class="form-control" id="mission{{$index}}" ng-model="experienceProfessionnelle.mission">
+</div>
+<div class="form-group">
+    <button class="btn btn-success btn-sm" ng-click="ajouterExperienceProfessionnelle()"><span class="glyphicon glyphicon-plus"></span></button>
+    <button class="btn btn-danger btn-sm" ng-click="supprimerExperienceProfessionnelle()"><span class="glyphicon glyphicon-minus"></button>
+</div>

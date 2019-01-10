@@ -1,0 +1,151 @@
+/*================================================================================================= RESET */
+
+html, body, div, p, h1, h2, h3, h4, h5, h6, a, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*================================================================================================= GENERAL */
+
+div#pageCV {
+	width: 800px;
+	margin: 20px auto;
+	padding: 10px;
+	-moz-border-radius: 11px;
+	border-radius: 11px;
+	-moz-box-shadow: 0 0 20px 5px #1e1e1e;
+	box-shadow: 0 0 20px 5px #1e1e1e;
+	background-color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #555;
+}
+
+#pageCV a {
+	color: #a2ac08;
+}
+
+/*================================================================================================= HEADER */
+
+#pageCV div#headerCV {
+	width: 760px;
+	margin: 25px auto;
+	overflow: hidden;
+}
+
+div#headerCVLeft {
+	float: left;
+}
+
+img#photo {
+	float: left;
+	margin-left: 30px;
+	padding: 6px;
+	border: 1px solid #bbb;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #f7f7f7;
+	height: 120px;
+	width: 120px;
+}
+
+p#headerCVRight {
+	float: left;
+	margin-left: 30px;
+	line-height: 19px;
+}
+
+#pageCV h1 {
+	font-size: 40px;
+	color: #333;
+}
+
+p#caption {
+	margin-top: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #a2ac08;
+}
+
+/*================================================================================================= SECTION */
+
+div.section {
+	width: 760px;
+	margin: 0 auto;
+	padding-top: 25px;
+	border-top: 1px solid #a2ac08;
+	overflow: hidden;
+}
+
+div.section:last-child {
+	margin-bottom: 25px;
+	border-bottom: 1px solid #a2ac08;
+}
+
+div.sectionLeft {
+	float: left;
+	width: 250px;
+}
+
+div.sectionRight {
+	float: left;
+	width: 510px;
+}
+
+div.entry {
+	padding: 25px 0;
+	border-top: 1px solid #a2ac08;
+}
+
+div.entry:first-child {
+	padding: 0 0 25px 0;
+	border: 0;
+}
+
+div.entryCompetence {
+	float: left;
+	margin-bottom: 25px;
+	padding-left: 25px;
+}
+
+div.entryCompetence:first-child {
+	border: 0;
+	margin-bottom: 25px;
+}
+
+#pageCV h2 {
+	font-size: 27px;
+}
+
+p  {
+	line-height: 18px;
+}
+
+#pageCV h5 {
+	float: right;
+	font-size: 16px;
+	color: #a2ac08;
+}
+
+#pageCV h3 {
+	font-size: 16px;
+}
+
+#pageCV h4 {
+	margin-top: 5px;
+	font-size: 14px;
+	color: #888;
+}
+
+p.details {
+	margin-top: 5px;
+}
+
+
+/*================================================================================================= Button impression */
+.button-impression {
+	width:100%;
+	height:70px;
+	font-size: 30px;
+}

@@ -1,0 +1,16 @@
+<div class="form-group" data-ng-repeat="domaineCompetence in cv.domainesCompetences">
+    <h4>Domaine de compétence n°{{$index}} : </h4>
+    <label for="domaine{{$index}}" class="control-label">Domaine </label>
+    <input type="text" class="form-control" id="domaine{{$index}}" ng-model="domaineCompetence.domaine">
+    <label for="competences" class="control-label">Compétence(s) </label>
+    <div data-ng-repeat="competence in domaineCompetence.competences">
+        <input type="text" class="form-control" ng-model="competence.label" >
+        <!-- <input type="text" class="form-control" ng-model="compet.note" > -->
+    </div>
+    <button class="btn btn-warning btn-xs" ng-click="cv.ajouterCompetenceAuDomaine(domaineCompetence)"><span class="glyphicon glyphicon-plus"> ajouter</span></button>
+    <button class="btn btn-info btn-xs" ng-click="cv.supprimerCompetenceDuDomaine(domaineCompetence)"><span class="glyphicon glyphicon-minus"> supprimer</button>
+</div>
+<div class="form-group">
+    <button class="btn btn-success btn-sm" ng-click="ajouterDomaineCompetence()"><span class="glyphicon glyphicon-plus"></span></button>
+    <button class="btn btn-danger btn-sm" ng-click="supprimerDomaineCompetence()"><span class="glyphicon glyphicon-minus"></button>
+</div>

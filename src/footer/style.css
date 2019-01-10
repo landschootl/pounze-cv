@@ -1,0 +1,29 @@
+#footer {
+	background: #f39c12; 
+	padding: 1em 1em 2em; 
+	font-family: "Segoe UI", Helvetica, Tahoma, sans-serif;
+	border-top: solid 10px #D98B10;
+}
+.copy {
+	margin: 1em 0; 
+	color: #2c3e50;
+}
+.social, .copy {
+	text-align: center;
+}
+.social a {
+	margin-right: 1em;
+	padding: 5px; text-decoration: none; 
+	color: #2c3e50; display: inline-block; 
+	overflow: hidden;  
+	transition: all 0.3s ease-in-out;
+}
+.social a span {
+	padding-bottom: 1em;
+}
+.social a i {
+	padding-bottom: 0.5em;
+}
+.social a:hover {
+	color: #ffffff;
+}

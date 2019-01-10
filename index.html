@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+
+    <!-- scriptsJs -->
+    <script type="text/javascript" src="http://code.angularjs.org/1.0.1/angular-1.0.1.js"></script>
+    <script type="text/javascript" src="libs/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+    
+    <!-- styles --> <!--ATTENTION !!!! NE PAS OUBLIER LES media="screen" !!!!!! -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css" media="screen"/>
+    <link rel="stylesheet" href="libs/font-awesome-4.3.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="src/curriculumVitae/Editer/style.css"/>
+    <link rel="stylesheet" href="src/header/style.css" media="screen"/>
+    <link rel="stylesheet" href="style.css" media="screen"/>
+    <link rel="stylesheet" href="src/curriculumVitae/Apercu/style_ecran.css"/>
+    <link rel="stylesheet" href="src/footer/style.css" media="screen"/>
+    
+
+    <!-- modules -->
+    <script type="text/javascript" src="app.js"></script>
+
+    <!-- controllers -->
+    <script type="text/javascript" src="src/curriculumVitae/Apercu/Controller.js"></script>
+    <script type="text/javascript" src="src/curriculumVitae/Editer/Controller.js"></script>
+    <script type="text/javascript" src="src/footer/compteurVisite/Controller.js"></script>
+    <script type="text/javascript" src="src/accueil/Controller.js"></script>
+
+    <!-- directives -->
+    <script type="text/javascript" src="src/header/Directive.js"></script>
+    <script type="text/javascript" src="src/footer/Directive.js"></script>
+    <script type="text/javascript" src="src/curriculumVitae/Editer/FormulaireDirective.js"></script>
+
+    <!-- filters -->
+
+    <!-- services -->
+    <script type="text/javascript" src="src/curriculumVitae/Service.js"></script>
+
+    <style>
+        @media print
+        {
+            body {
+                background: #fff;
+            }
+
+            #header {
+                display: none;
+            }
+
+            #footer {
+                display: none;
+            }
+
+            .button-impression {
+                display: none;
+            }
+
+            div#pageCV {
+                margin-top: 0px;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                /*border: 10px solid #333 !important;*/
+            }
+
+            img#photo {
+                padding: 6px;
+                background-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header-directive></header-directive>
+    <div>
+        <div>
+            <div ng-view></div>
+        </div>
+    </div>
+    <footer-directive></footer-directive>
+</body>
+
+
+
+</html>

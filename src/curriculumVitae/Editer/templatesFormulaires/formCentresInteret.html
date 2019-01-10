@@ -1,0 +1,11 @@
+<div class="form-group" data-ng-repeat="centreInteret in cv.centresInteret">
+    <h4>Centres d'intêret n°{{$index}} : </h4>
+    <label for="domaine{{$index}}" class="control-label">Domaine </label>
+    <input type="text" class="form-control" id="domaine{{$index}}" ng-model="centreInteret.loisir">
+    <label for="competences" class="control-label">Detail(s) </label>
+    <input type="text" class="form-control" id="domaine{{$index}}" ng-model="centreInteret.details">
+</div>
+<div class="form-group">
+    <button class="btn btn-success btn-sm" ng-click="ajouterCentreInteret()"><span class="glyphicon glyphicon-plus"></span></button>
+    <button class="btn btn-danger btn-sm" ng-click="supprimerCentreInteret()"><span class="glyphicon glyphicon-minus"></button>
+</div>

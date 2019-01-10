@@ -1,0 +1,119 @@
+<!-- Message information impression -->
+<br>
+<div class="alert alert-warning alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Attention : </strong>N'oubliez pas de désactiver les "en-têtes et pieds de page" ainsi que supprimer les marges dans les paramètres d'impression.</div>
+
+<!-- formulaire et pub -->
+<div class="container">
+    <div class="row" id="editerCurriculumVitae">
+        <!-- formulaire -->
+        <div class="col-xs-12 col-sm-9 col-md-9 col-log-8">
+            <div class="accordion-group">
+                <div class="row">
+                    <div class="form-group">
+                        <legend>Modifier vos informations :</legend>
+                    </div>
+                    <!-- première colonne -->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-log-6" id="monaccordeon">
+                        <div class="panel panel-default" id="pannel-options">
+                            <div class="panel-heading"> 
+                                <h3 class="panel-title">
+                                    <a href="#tab_options" data-parent="#monaccordeon" data-toggle="collapse"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Options </a> 
+                                </h3>
+                            </div>
+                            <div id="tab_options" class="panel-collapse collapse in">
+                                <div class="panel-body"> 
+                                    <formoptions-directive></formoptions-directive>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" ng-show="visibilites.description">
+                            <div class="panel-heading"> 
+                                <h3 class="panel-title">
+                                    <a href="#tab_description" data-parent="#monaccordeon" data-toggle="collapse"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Qui suis-je ? </a> 
+                                </h3>
+                            </div>
+                            <div id="tab_description" class="panel-collapse collapse">
+                                <div class="panel-body"> 
+                                    <formdescription-directive></formdescription-directive>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" ng-show="visibilites.centresInteret">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a href="#tab_centresInteret" data-parent="#monaccordeon" data-toggle="collapse"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Centres d'intêret </a> 
+                                </h3>
+                            </div>
+                            <div id="tab_centresInteret" class="panel-collapse collapse">
+                                <div class="panel-body"> 
+                                    <formcentresinteret-directive></formcentresinteret-directive>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- deuxième colonnes -->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-log-6" id="monaccordeon2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"> 
+                                <h3 class="panel-title">
+                                    <a href="#tab_informationsPersonnelles" data-parent="#monaccordeon2" data-toggle="collapse"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Informations personnelles </a> 
+                                </h3>
+                            </div>
+                            <div id="tab_informationsPersonnelles" class="panel-collapse collapse">
+                                <div class="panel-body"> 
+                                    <forminformationspersonnelles-directive></forminformationspersonnelles-directive>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" ng-show="visibilites.experiencesProfessionnelles">
+                            <div class="panel-heading"> 
+                                <h3 class="panel-title">
+                                    <a href="#tab_experiencesProfessionnelles" data-parent="#monaccordeon2" data-toggle="collapse"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Expériences professionnelles </a> 
+                                </h3>
+                            </div>
+                            <div id="tab_experiencesProfessionnelles" class="panel-collapse collapse">
+                                <div class="panel-body"> 
+                                    <formexperiencesprofessionnelles-directive></formexperiencesprofessionnelles-directive>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" ng-show="visibilites.formations">
+                            <div class="panel-heading"> 
+                                <h3 class="panel-title">
+                                    <a href="#tab_formations" data-parent="#monaccordeon2" data-toggle="collapse"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Formations </a> 
+                                </h3>
+                            </div>
+                            <div id="tab_formations" class="panel-collapse collapse">
+                                <div class="panel-body"> 
+                                    <formformation-directive></formformation-directive>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" ng-show="visibilites.domainesCompetences">
+                            <div class="panel-heading"> 
+                                <h3 class="panel-title">
+                                    <a href="#tab_competences" data-parent="#monaccordeon2" data-toggle="collapse"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Competences </a> 
+                                </h3>
+                            </div>
+                            <div id="tab_competences" class="panel-collapse collapse">
+                                <div class="panel-body"> 
+                                    <formcompetence-directive></formcompetence-directive>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Pub -->
+        <div class="col-xs-12 col-sm-12 col-md-3 col-log-4">
+             <img src="http://lille.aujourdhui.fr/uploads/assets/evenements/recto_fiche/2013/01/188083_salon-de-l-etudiant-et-du-lyceen-de-lille.jpg" class="img-thumbnail">
+             <img src="http://montpellier.aujourdhui.fr/uploads/assets/evenements/recto_fiche/2015/01/470905_salon-de-l-enseignement-superieur-de-montpellier-2_152704.png" class="img-thumbnail">
+        </div>
+    </div>
+</div>

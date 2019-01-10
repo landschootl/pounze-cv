@@ -1,0 +1,94 @@
+<div id="pageCV">
+	<div id="headerCV">
+		<div id="headerCVLeft">
+			<h1>{{cv.nom}}</h1>
+			<h1>{{cv.prenom}}</h1>
+			<p id="caption">{{cv.status}}</p>
+		</div>
+		<img id="photo" src="{{cv.urlPhoto}}" alt="John Doe">
+		<p id="headerCVRight">
+			<strong>Adresse: </strong>{{cv.adresse}}<br>
+			<strong>Ville: </strong>{{cv.codePostal}}, {{cv.ville}}<br>
+			<strong>Pays: </strong>{{cv.pays}}<br>
+			<strong>Telephone: </strong>{{cv.telephone}}<br>
+			<strong>E-mail: </strong><a href="mailto:{{cv.mail}}">{{cv.mail}}</a><br>
+			<strong>Age: </strong>{{cv.age}}<br>
+			<strong ng-show="cv.permis">Permis B</strong>
+		</p>
+	</div>
+	<div class="section" ng-show="visibilites.description">
+		<div class="sectionLeft">
+			<h2><i class="fa fa-user fa-2x"></i> Qui suis-je ?</h2>
+		</div>
+		<div class="sectionRight">
+			<div class="entry">
+				<p>
+					{{cv.description}}
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" ng-show="visibilites.formations">
+		<div class="sectionLeft">
+			<h2><i class="fa fa-graduation-cap fa-2x"></i>Formations</h2>
+		</div>
+		<div class="sectionRight">
+			<div class="entry" data-ng-repeat="formation in cv.formations">
+				<h5>{{formation.dateDebut}} - {{formation.dateFin}}</h5>
+				<h3>{{formation.ecole}}, {{formation.ville}}, {{formation.pays}}</h3>
+				<h4>{{formation.diplome}}</h4>
+				<p class="details">
+					{{formation.specification}}
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" ng-show="visibilites.experiencesProfessionnelles">
+		<div class="sectionLeft">
+			<h2><i class="fa fa-file-text fa-2x"></i> Expériences <br> Professionnelles</h2>
+		</div>
+		<div class="sectionRight">
+			<div class="entry" data-ng-repeat="experienceProfessionnelle in cv.experiencesProfessionnelles">
+				<h5>{{experienceProfessionnelle.dateDebut}} - {{experienceProfessionnelle.dateFin}}</h5>
+				<h3>{{experienceProfessionnelle.entreprise}}</h3>
+				<h4>{{experienceProfessionnelle.fonction}}</h4>
+				<p class="details">
+					{{experienceProfessionnelle.mission}}
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" ng-show="visibilites.domainesCompetences">
+		<div class="sectionLeft">
+			<h2><i class="fa fa-check fa-2x"></i>Compétences</h2>
+		</div>
+		<div class="sectionRight">
+			<div class="entryCompetence" data-ng-repeat="domaineCompetence in cv.domainesCompetences">
+				<h3>{{domaineCompetence.domaine}}</h3>
+				<p class="details">
+					<ul>
+						<li data-ng-repeat="competence in domaineCompetence.competences">{{competence.label}}</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" ng-show="visibilites.centresInteret">
+		<div class="sectionLeft">
+			<h2><i class="fa fa-tree fa-2x"></i> Centre d'intêret</h2>
+		</div>
+		<div class="sectionRight">
+			<div class="entry">
+				<div class="entry" data-ng-repeat="centreInteret in cv.centresInteret">
+					<h3>{{centreInteret.loisir}}</h3>
+					<p class="details">
+						{{centreInteret.details}}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- button d'impression -->
+<button onClick="window.print()" type="button" class="btn btn-success button-impression">Imprimer</button>
